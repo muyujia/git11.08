@@ -1,0 +1,388 @@
+
+html {
+    margin-top: 40px ;
+}
+body {
+    border-top: 1px solid transparent;
+    margin-top: -1px;
+    position: relative;
+}
+html.oldie body {
+    overflow-x: visible;
+}
+body,html,h1,h2,h3,ul,li,ol{
+    margin:0;padding:0;list-style: none;
+}
+
+.adver{
+    /*position: absolute;*/
+    background: #444;
+    line-height: 1;
+    /*top: -40px;*/
+    width: 100%;
+    right: 0;
+    height: 40px;
+    /*z-index: 9999;*/
+}
+.adv-text{
+    color: #a8a8aa;
+    font-size: 12px;
+    font-family: "HanHei SC", PingHei, "PingFang SC", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    display: block;
+    line-height: 40px;
+    overflow: hidden;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    text-align: right;
+    max-width: 976px;
+    margin: 0 auto;
+}
+
+/*导航开始*/
+.nav{
+   weight:100%;height:100%;
+    background:#000;
+}
+.nav{
+    position: absolute;
+    top: 40px;
+    right: 0;
+    left: 0;
+    z-index: 9999;
+    display: block;
+    margin: 0;
+    width: 100%;
+    min-width: 1024px;
+    height: 48px;
+    max-height: 44px;
+    background: #333;
+    background: rgba(0,0,0,0.8);
+    font-size: 18px;
+    -webkit-user-select: none;
+}
+.nav-content{
+    margin: 0 auto;
+    max-width: 980px;
+    padding: 0 22px;
+    position: relative;
+    z-index: 2;
+}
+.nav-content .ac-list{
+    cursor: default;
+    margin: 0 -10px;
+    width: auto;
+    height: 44px;
+    text-align: justify;
+}
+.nav-content .ac-item{
+    display: inline-block;
+    position: relative;
+    height: 44px;
+    z-index: 1;
+    vertical-align: top;
+    margin-right:40px;
+}
+.nav-content .ac-link{
+    font-size: 16px;
+    line-height: 2.75;
+    font-weight: 400;
+    letter-spacing: normal;
+    opacity: 1;
+    filter: alpha(opacity=100);
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    padding: 0 10px;
+    display: inline-block;
+    height: 44px;
+    background: no-repeat;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: opacity 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+    -webkit-tap-highlight-color: transparent;
+    outline-offset: -7px;
+}
+.ac-link .ac-link-apple{
+    background-repeat: no-repeat;
+    background-size: 20px 44px;
+    background-image: url(../img/image_large.svg);
+    background-position: center center;
+    width: 20px;
+}
+.ac-link .ac-link-mac{
+    background-repeat: no-repeat;
+    background-size: 31px 44px;
+    background-image: url(../img/image_large.svg);
+    background-position: center center;
+    background-origin: content-box;
+    background-size: cover;
+    width: 1.9375em;
+    max-width: 52.7px;
+}
+
+
+
+/*banner开始*/
+.banner{
+    height:540px;
+    width:100%;
+    overflow:hidden;
+    font-family:"微软雅黑";
+    text-align: center;
+    position: relative;
+    margin-top:40px;
+}
+.banner a{
+    display:block;
+    width:100%;
+    height:540px;
+    position: absolute;
+    text-decoration:none;
+}
+.banner span{
+    display: block;
+    height:40px;
+    line-height:40px;
+    font-size:30px;
+    font-weight:bold;
+}
+.banner p{
+    height:60px;
+    line-height:40px;
+    font-size:35px;
+    font-weight:lighter;
+}
+.ban1{
+    width:auto;
+    height:auto;
+    background-image:url(../img/event_large.jpg);
+    background-size: cover;
+    background-position: 50% 38%;
+    top: 0%;
+    background-repeat: no-repeat;
+    color:#fff;
+}
+.ban2{
+    width:auto;
+    height:auto;
+    background-color:#000;
+    background-image:url(../img/macbookpro_large.jpg);
+    background-repeat: no-repeat;
+    color:#fff;
+    background-size: cover;
+    background-position: 50% 38%;
+    top: 0%;
+}
+.ban3{
+    width:auto;
+    height:auto;
+    background-color:#000;
+    background-image:url(../img/iphone_large.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: 50% 38%;
+    color:#fff;
+}
+@media screen and (max-width:1068px){
+   .ban1{
+       background-image:url(../img/event_medium.jpg);
+       background-size: cover;
+   }
+    .ban2{
+        background-image:url(../img/macbookpro_medium.jpg);
+        background-repeat: no-repeat;
+    }
+    .ban3{
+        background-image:url(../img/iphone_large.jpg);
+        background-repeat: no-repeat;
+    }
+}
+@media screen and (max-width:735px){
+    .ban1{
+        background-image:url(../img/event_small.jpg);
+        background-size: cover;
+    }
+    .ban2{
+        background-image:url(../img/macbookpro_small.jpg);
+        background-repeat: no-repeat;
+    }
+    .ban3{
+        background-image:url(../img/iphone_large.jpg);
+        background-repeat: no-repeat;
+    }
+}
+.pic-list div[class*=col]{
+    height:200px;
+    border:1px solid#fff;
+    box-sizing:border-box;
+    /*background:pink;*/
+}
+.promo-nike-watch {
+    display:block;
+    height:200px;
+    background-size: 360px 200px;
+    background-repeat: no-repeat;
+    background: url(../img/nike_watch_small.jpg);
+}
+.promo-airpods{
+    display:block;
+    height:200px;
+    background-size: 360px 200px;
+    background-repeat: no-repeat;
+    background: url(../img/airpods_small.jpg);
+}
+.promo-iphone-upgrade{
+    display:block;
+    height:200px;
+    background-size: 360px 200px;
+    background-repeat: no-repeat;
+    background: url(../img/iphone_upgrade_small.jpg);
+}
+.promo-accessibility{
+    display:block;
+    height:200px;
+    background-size: 360px 200px;
+    background-repeat: no-repeat;
+    background: url(../img/accessibility_small.jpg);
+}
+@media screen and (min-width:735px){
+    .promo-nike-watch {
+        background-size: 640px 200px;
+        background-repeat: no-repeat;
+        background: url(../img/nike_watch_medium.jpg);
+    }
+    .promo-airpods{
+        display:block;
+        height:200px;
+        background-size: 360px 200px;
+        background-repeat: no-repeat;
+        background: url(../img/airpods_medium.jpg);
+    }
+    .promo-iphone-upgrade{
+        display:block;
+        height:200px;
+        background-size: 360px 200px;
+        background-repeat: no-repeat;
+        background: url(../img/iphone_upgrade_medium.jpg);
+    }
+    .promo-accessibility{
+        display:block;
+        height:200px;
+        background-size: 360px 200px;
+        background-repeat: no-repeat;
+        background: url(../img/accessibility_medium.jpg);
+    }
+}
+@media screen and (min-width:1068px){
+    .promo-nike-watch {
+            background-size: 736px 200px;
+            background-repeat: no-repeat;
+            background: url(../img/nike_watch_large.jpg);
+      }
+    .promo-airpods{
+        display:block;
+        height:200px;
+        background-size: 360px 200px;
+        background-repeat: no-repeat;
+        background: url(../img/airpods_large.jpg);
+    }
+    .promo-iphone-upgrade{
+        display:block;
+        height:200px;
+        background-size: 360px 200px;
+        background-repeat: no-repeat;
+        background: url(../img/iphone_upgrade_large.jpg);
+    }
+    .promo-accessibility{
+        display:block;
+        height:200px;
+        background-size: 360px 200px;
+        background-repeat: no-repeat;
+        background: url(../img/accessibility_large.jpg);
+    }
+}
+
+/*banner轮播结束*/
+
+/*footer开始*/
+.footer{
+    width:100%;
+    height:auto;
+    background: #f2f2f2;
+    margin-top:1px;
+}
+.foot{
+    margin: 0 auto;
+    padding: 0 40px;
+    font-size: 12px;
+    line-height: 1.66667;
+    font-weight: 400;
+    background-color: #f2f2f2;
+    color: #666;
+    overflow: hidden;
+    width:998px;
+}
+.notes{
+    color: #999;
+    margin:10px auto;
+    font-size: 12px;
+    line-height: 1.33333;
+    font-weight: 400;
+    letter-spacing: normal;
+}
+.link{
+    width: 100%;
+    height:240px;
+
+    border-top:1px solid #ccc;
+
+}
+.link ul{
+    margin-top: 10px;
+    color: #333;
+    float: left;
+    width:20%;
+}
+.notes span a{
+    color: #0070c9;
+}
+.logo{
+    float: right;
+}
+.logo span{
+    background-image: url(../img/16.png);
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    padding-right: 5px;
+    background-position: left center;
+    cursor: pointer;
+    float: left;
+    margin-top: 1px;
+}
+.contect .notes{
+    float:left;
+    margin:0;
+}
+.not-links{
+    float:left;
+}
+.not-link{
+    border-right: 1px solid #d6d6d6;
+    margin-right: 10px;
+    padding-right: 12px;
+    white-space: nowrap;
+}
+.footer a{
+    color: #666;
+    text-decoration:none;
+    font-size:1em;
+}
+.footer a:hover{
+    color: #333;
+    text-decoration: underline;
+}
+
+
