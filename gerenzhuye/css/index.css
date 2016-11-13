@@ -1,0 +1,348 @@
+body,html,h1,h2,h3,ul,li,p {
+    margin: 0;padding: 0;list-style: none;
+}
+a{
+    color:#000;text-decoration: none;
+}
+
+.banbox{
+    width:100%;height:100%;
+}
+.inner{
+    width:100%;
+    height:100%;
+}
+/*第一屏*/
+.bgbox{
+    width:100%;height:600px;
+    background:#170F39;
+
+}
+.top{
+    width:50%;height:44px;
+    border-bottom:3px solid #E89393;
+    position:relative;
+}
+.top span{
+    font-size:20px;
+    line-height:44px;
+    color:#fff;
+}
+.imgbox{
+    width:150px;height:150px;
+    margin:0 auto;
+    background:gray;
+    border-radius:50%;
+    margin-top:20px;
+    background:url(../img/touxiang.jpg);
+    background-size:contain;
+}
+.bgbox h1{
+    text-align:center;
+    font-weight:bold;
+    line-height:60px;
+    font-family:"微软雅黑";
+    color:#fff;
+}
+.bgbox p{
+    font-size:30px;
+    text-align:center;
+    color:#fff;
+}
+.botbox{
+    width:60px;height:60px;
+    border:2px solid #B52121;
+    border-radius:10px;
+    position:absolute;
+    left:0;right:0;bottom:20px;
+    margin:0 auto;
+    text-align:center;
+    line-height:60px;
+    color:#fff;
+    font-size:30px;
+}
+
+/*第二屏*/
+.bgbox1{
+    width:100%;
+    height:100%;
+    position:relative;
+    background:url(../img/ban1.jpg) no-repeat;
+    background-size:cover;
+}
+.title{
+    width:480px;
+    height:120px;
+    margin:0 auto;
+}
+.left{
+    width:100px;
+    height:10px;
+    border:2px solid#000;
+    float:left;
+    margin-top:55px;
+}
+.txt{
+    width:240px;
+    height:120px;
+    float:left;
+    font-size:30px;
+    font-family:"微软雅黑";
+    text-align:center;
+    line-height:120px;
+    color:#fff;
+}
+.right{
+    width:100px;
+    height:10px;
+    border:2px solid#000;
+    float:left;
+    margin-top:55px;
+}
+.titbox{
+    width:100%;
+    height:100%;
+    /*background:yellow;*/
+}
+.box{
+    width:500px;
+    height:300px;
+    margin:0 auto;
+}
+.box1{
+    font-size:20px;
+    line-height:40px;
+    font-weight:bold;
+    border:1px solid#fff;
+    box-sizing:border-box;
+}
+.box2{
+    text-indent:2em;
+    font-size:20px;
+    font-weight:bold;
+    line-height:30px;
+    border:1px solid#fff;
+    box-sizing:border-box;
+}
+/*第三屏*/
+.bgbox2{
+    width:100%;
+    height:600px;
+    /*background:cornflowerblue;*/
+    position:relative;
+    background:url(../img/ban2.jpg) no-repeat;
+    background-size:cover;
+}
+.skillbox{
+    width:100%;
+    height:auto;
+    /*background:blue;*/
+}
+.divibox{
+    width:50px;
+    height:400px;
+    position:absolute;
+    top:40px;bottom:0;left:0;right:0;
+    margin:auto;
+    display:none;
+}
+.rbox{
+    width:50px;
+    height:50px;
+    border:2px solid#53BED6;
+    border-radius:50%;
+    box-sizing:border-box;
+}
+.line{
+    width:3px;
+    height:100px;
+    background:#93B5BC;
+    margin:0 auto;
+}
+.rbox1{
+    background:url(../img/tubiao1.jpg) no-repeat;
+    background-size:contain;
+}
+.rbox2{
+    background:url(../img/tubiao2.jpg) no-repeat;
+    background-size:cover;
+    background-position:center ;
+}
+.rbox3{
+    background:url(../img/tubiao3.jpg) no-repeat;
+    background-size:cover;
+    background-position:center ;
+}
+.text1{
+    width:400px;
+    height:200px;
+    /*background:#0A3964;*/
+    /*opacity:0.8;*/
+    margin:0 auto;
+    font-size:18px;
+    font-family:"宋体";
+    line-height:30px;
+    font-weight:bold;
+    color:#000;
+}
+.text2{
+    width:400px;
+    height:200px;
+    /*background:#0A3964;*/
+    /*opacity:0.8;*/
+    margin:0 auto;
+    font-size:18px;
+    font-family:"宋体";
+    line-height:30px;
+    font-weight:bold;
+    color:deeppink;
+}
+
+/*第四屏*/
+.bgbox3{
+    width:100%;
+    height:100%;
+    background:lightblue;
+    position:relative;
+}
+.conbox{
+    width:100%;
+    height:100%;
+    margin:0 auto;
+    background:plum;
+    font-size:20px;
+    line-height:100%;
+    text-align:center;
+    color:darkred;
+}
+div[class*=col]{
+    width:200px;
+    height:200px;
+    float:left;
+    border-radius:50%;
+    margin-right:80px;
+    margin-top:50px;
+    line-height:200px;
+    font-size:20px;
+    font-weight:bold;
+}
+.col-s-hide{
+    display:none;
+}
+.list{
+    margin-left:10px;
+}
+.list1{
+    background:url(../img/list1.jpg)no-repeat;
+    background-size:cover;
+}
+.list2{
+    background:url(../img/list2.jpg)no-repeat;
+    background-size:cover;
+}
+.list3{
+    background:url(../img/list3.jpg)no-repeat;
+    background-size:cover;
+}
+.list4{
+    background:url(../img/list4.jpg)no-repeat;
+    background-size:cover;
+}
+.list5{
+    background:url(../img/list5.jpg)no-repeat;
+    background-size:cover;
+}
+.list6{
+     background:url(../img/list6.jpg)no-repeat;
+     background-size:cover;
+ }
+.list7{
+    background:url(../img/list7.jpg)no-repeat;
+    background-size:cover;
+}
+.list8{
+    background:url(../img/list8.jpg)no-repeat;
+    background-size:cover;
+}
+.list9{
+    background:url(../img/list9.jpg)no-repeat;
+    background-size:cover;
+}
+
+div[class*=col]:hover{
+    background:rgba(0,0,0,0.4);
+}
+@media screen and (min-width:800px){
+    .conbox {
+        width:1000px;
+    }
+    .col-l-hide{
+        display:block;
+    }
+  .box{
+      margin:0 auto;
+  }
+    .divibox{
+        display:none;
+    }
+    .text1{
+        width:400px;
+        height:250px;
+        margin:0 auto;
+        font-size:18px;
+        font-family:"宋体";
+        line-height:30px;
+    }
+    .text2{
+        width:400px;
+        height:200px;
+        margin:10px auto;
+        font-size:18px;
+        font-family:"宋体";
+        line-height:30px;
+    }
+
+}
+@media screen and (min-width:1200px){
+    .conbox{
+        width:1200px;
+    }
+    .col-l-hide{
+        display:none;
+    }
+    .box1{
+        margin-left:200px;
+    }
+    .box2{
+        margin-left:700px;
+    }
+    .divibox{
+        display:block
+    }
+    .text1{
+        width:400px;
+        height:250px;
+        position:absolute;
+        left:750px;
+        font-size:18px;
+        font-family:"宋体";
+        line-height:30px;
+    }
+    .text2{
+        width:400px;
+        height:200px;
+        position:absolute;
+        left:200px;
+        top:300px;
+        font-size:18px;
+        font-family:"宋体";
+        line-height:30px;
+    }
+
+
+}
+
+
+
+
+
