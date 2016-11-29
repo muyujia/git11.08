@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="js/jquery.js"></script>
+    <style>
+        .box{
+            width:200px;
+            height:200px;
+            border:2px solid#000;
+        }
+    </style>
+</head>
+<body>
+<div class="box"></div>
+</body>
+</html>
+<script>
+   var box=document.querySelector(".box");
+
+//   box.addEventListener("touchstart",function(){
+//       console.log("start");
+//   })
+//   box.addEventListener("touchmove",function(){
+//       console.log("move");
+//   })
+//   box.addEventListener("touchend",function(){
+//       console.log("end");
+//   })
+   var t=0;
+    box.addEventListener("touchstart",function(e){
+//      timeOutEvent=setTimeout("longpress()",500);
+        t=setTimeout(longpress,500);
+        e.preventDefault();
+
+    })
+   box.addEventListener("touchmove",function(){
+       clearTimeout(t);
+       t=0;
+   })
+   box.addEventListener("touchend",function(){
+       clearTimeout(t);
+       if(t!=0){
+           box.style.border="2px solid blue";
+           box.style.background="lightgreen";
+       }
+       return false;
+   })
+
+ function longpress(){
+     t=0;
+     box.style.background="pink";
+     box.style.border="2px solid black";
+ }
+
+
+</script>
