@@ -10,13 +10,13 @@
             margin:0;padding:0;
             list-style:none;
             text-decoration:none;
-            overflow:hidden;
+
         }
        .wheel{
            width:100%;
            height:300px;
            border:1px solid#000;
-
+           overflow:hidden;
        }
        .box{
            width:300%;
@@ -50,31 +50,28 @@
 //    })
 
 $(function(){
-    var width = $(window).width();
-    var marginL;
-    var num = 0;
+    var width = $(window).width();  //获取浏览器的宽度
+    var marginL;  //定义全局变量记录移动过的距离
+    var num = 0; //记录初始的的位置
 //阻止浏览器的默认行为
     $(".wheel").mousedown(function(e){
             e.preventDefault();
         })
     $(".wheel").mousemove(function(e){
             e.preventDefault();
-
+    });
     touch.on("body","dragstart",".box",function(e){
-        $(".box").css({
-            transition:"none"
-        });
-            marginL = parseInt($(".box").css("marginLeft"))?parseInt($(".box").css("marginLeft")):0;
+        $(".box").css({transition:"none" });
+//记录移动过的距离
+        marginL = parseInt($(".box").css("marginLeft"))?parseInt($(".box").css("marginLeft")):0;
         });
      touch.on("body","drag",".box",function(e){
-        $(".box").css({
-            marginLeft:e.x+marginL
-           })
-         })
-       });
+        $(".box").css({marginLeft:e.x+marginL })
+     })
+
 
     touch.on("body","dragend",".box",function(e){
-        if(Math.abs(e.x)>100){
+        if(Math.abs(e.x)>200){
             if(e.direction == "left"){
                 num++;
                 if(num == $(".box a").length){
@@ -92,7 +89,7 @@ $(function(){
             })
            }else{
             $(".box").css({
-                marginLeft:num*width,
+                marginLeft:-num*width,
                 transition:"margin-left 1s ease"
             })
            }
