@@ -1,0 +1,474 @@
+body,html,ul,li,h1,h2,h3,h4,h5,h6{
+    margin:0;padding:0;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+}
+/*头部开始*/
+header{
+    width:100%;
+    height:60px;
+    background:#168bd8;
+    position:fixed;
+    top:0;left:0;
+    z-index:1;
+}
+a{
+    color:#fff;
+    font-family:"微软雅黑";
+    text-decoration:none;
+    font-size:15px;
+}
+.header{
+    width:1000px;
+    height:60px;
+    margin:0 auto;
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:nowrap;
+}
+.header .logo{
+    width:120px;
+    height:40px;
+    background:url(../img/logo.png) no-repeat 0 0;
+    margin-top:15px;
+}
+.header .index{
+    align-self:center;
+    margin-top:20px;
+}
+.header .center{
+    display:none;
+}
+.header .last{
+    align-self:flex-end;
+    margin-bottom:8px;
+    font-size:13px;
+}
+.header a:nth-of-type(2){
+    margin-left:50px;
+}
+.header a:nth-of-type(6){
+    margin-left:230px;
+}
+/*header结束*/
+/*第一屏*/
+#fullpages{
+    width:100%;
+    height:100%;
+    transition:all .5s ease;
+}
+section{
+    width:100%;
+    height:100%;
+
+}
+section:nth-child(1){
+    background:url(../img/bg1.jpg) no-repeat;
+}
+section:nth-child(2){
+    background:url(../img/bg2.jpg) no-repeat;
+}
+section:nth-child(3){
+    background:url(../img/bg3.jpg) no-repeat;
+}
+section:nth-child(4){
+    background:url(../img/bg4.jpg) no-repeat;
+}
+.content{
+    width:1000px;
+    height:100%;
+    margin:0 auto;
+    /*background:red;*/
+    position:relative;
+}
+.txtbox{
+    width:501px;
+    height:158px;
+    position:absolute;
+    left:0;top:65px;
+    background:url(../img/launch.png) no-repeat;
+}
+.ship{
+    width: 242px;
+    height: 228px;
+    background: url(../img/ship.png) no-repeat;
+    position:absolute;
+    left: 126px;
+    top:225px;
+}
+.hill1{
+    width: 265px;
+    height: 175px;
+    background: url(../img/hill1.png);
+    position:absolute;
+    left: -182px;
+    top:360px;
+}
+.hill2{
+    width: 63px;
+    height: 78px;
+    background: url(../img/hill2.png);
+    position:absolute;
+    right: 290px;
+    top: 333px;
+}
+.hill3{
+    width: 260px;
+    height: 175px;
+    background: url(../img/hill3.png);
+    position:absolute;
+    right: -129px;
+    top: 384px;
+}
+
+.loginbox{
+    width: 340px;
+    height: 300px;
+    border-radius: 5px;
+    background: #4ebffc;
+    position: absolute;
+    right: 0;
+    top: 98px;
+}
+.user{
+    width:299px;
+    height:40px;
+    background:#fff;
+    margin:0 auto;
+    margin-top:26px;
+    margin-bottom:20px;
+}
+.pass{
+    width:299px;
+    height:40px;
+    background:#fff;
+    margin:0 auto;
+    margin-bottom:20px;
+}
+.token{
+    width:299px;
+    height:40px;
+    /*background:#fff;*/
+    margin:0 auto;
+    margin-bottom:20px;
+}
+.login-action{
+    width:300px;
+    height:86px;
+    margin:0 auto;
+}
+.user input{
+    width:270px;
+    border:0;
+    outline:none;
+    padding:9px;
+    height:20px;
+    box-shadow:none;
+}
+.pass input{
+    width: 270px;
+    border: 0;
+    outline: none;
+    padding: 9px;
+    height: 20px;
+    box-shadow:none;
+}
+.token input{
+    width:122px;
+    height:20px;
+    float:left;
+    padding:9px;
+    background:#fff;
+    outline:none;
+    border:0;
+}
+.token img{
+    width: 99px;
+    height: 39px;
+    margin-left: 10px;
+    float:left;
+    border:0;
+    background:#B8E5FE;
+    opacity:0.6;
+}
+.token a{
+    margin:10px 0 0 10px;
+    font-size: 12px;
+    float:left;
+}
+.login-action .submit{
+    width: 299px;
+    border: 0;
+    display: block;
+    background: #ffd850;
+    color: #5c4c12;
+    border-radius: 2px;
+    margin: 0 auto;
+    margin-top:12px;
+    padding: 0 10px;
+    font-size: 18px;
+    line-height: 35px;
+    font-family:"微软雅黑";
+}
+.login-action .login-bot{
+    width:300px;
+    height:19px;
+    margin: 12px 0 8px;
+    font-size: 12px;
+    color: #9dbcdb;
+}
+.login-action .login-bot .lf{
+    float:left;
+    font-size:12px;
+    font-family: "Microsoft YaHei", 微软雅黑, Helvetica, sans-serif;
+}
+.login-action .login-bot .lf span{
+    display: inline-block;
+    width:15px;
+    height:17px;
+    background:blue;
+    margin:2px 4px 0 0;
+}
+.login-action .login-bot .rf{
+    float:right;
+    font-size:12px;
+}
+/*第一屏结束*/
+/*第二屏开始*/
+.title-area{
+    position:absolute;
+    top:100px;left:20px;
+    z-index:5;
+}
+.title{
+    width: 500px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-family: 'Microsoft Yahei';
+    color: #fff;
+}
+.title h3{
+    width: 66px;
+    height: 126px;
+    text-indent: -9999em;
+    float: left;
+    background:url(../img/lingxian.png);
+}
+.text{
+    margin-left: 86px;
+    margin-top: 8px;
+}
+.text h4{
+    font-size: 34px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    line-height: 48px;
+    margin-bottom: 6px;
+}
+.text p{
+    font-size: 19px;
+    letter-spacing: 1px;
+    line-height: 32px;
+    opacity: 0.8;
+}
+.brain{
+    width: 444px;
+    height: 427px;
+    background: url(../img/brain.png);
+    position:absolute;
+    right:26px;
+    top:100px;
+}
+.square{
+    position: absolute;
+    display: block;
+    bottom:0;
+}
+.square.square1{
+    width: 44px;
+    height: 44px;
+    background: #35b568;
+    left: 70px;
+
+}
+.square.square2{
+    width:88px;
+    height:88px;
+    background: #4ac179;
+    left: 158px;
+}
+.square.square3{
+    width:44px;
+    height:44px;
+    background: #8ae75a;
+    left: 246px;
+}
+.square.square4{
+    width:44px;
+    height:44px;
+    background: #8ae75a;
+    right: 328px;
+}
+.square.square5{
+    width:44px;
+    height:44px;
+    background: #4ac179;
+    right: 240px;
+}
+/*第二屏结束*/
+/*第三屏开始*/
+.title1{
+    width: 500px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-family: 'Microsoft Yahei';
+    color: #fff;
+}
+.title1 h3{
+    width: 66px;
+    height: 126px;
+    text-indent: -9999em;
+    float: left;
+    background:url(../img/quanmian.png);
+}
+.allside{
+    width: 444px;
+    height: 330px;
+    background: url(../img/allside.png);
+    position:absolute;
+    right:32px;
+    top:120px;
+    opacity: 1;
+}
+.squares{
+    position: absolute;
+    display: block;
+    width: 88px;
+    height: 88px;
+}
+.squares.square1{
+    background: #33bb9a;
+    left: 70px;
+    top: 60px;
+}
+.squares.square2{
+    background: #29a2b8;
+    left: -18px;
+    top: 148px;
+}
+.squares.square3{
+    background: #60cf6e;
+    left: 158px;
+    top: 148px;
+}
+.squares.square4{
+    background: #8ae75a;
+    left: 70px;
+    top: 236px;
+    width: 176px;
+    height: 176px;
+    background:url(../img/square.jpg)
+}
+.squares.square5{
+    background: #33bb9a;
+    left: 246px;
+    top: 236px;
+}
+
+/*第三屏结束*/
+/*第四屏开始*/
+.title2{
+    width: 500px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-family: 'Microsoft Yahei';
+    color: #fff;
+}
+.title2 h3{
+    width: 66px;
+    height: 126px;
+    text-indent: -9999em;
+    float: left;
+    background:url(../img/zhuanye.png);
+}
+.stat{
+    width: 603px;
+    height: 361px;
+    background: url(../img/stat.png);
+    position:absolute;
+    right: 80px;
+    top:80px;
+}
+.bubble{
+    position:absolute;
+    left:-20px;
+    top:56px;
+    width: 275px;
+    height: 245px;
+    background: url(../img/bubble.png);
+}
+.follow-bot{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+.copyright{
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    line-height: 80px;
+    font-family: 'Microsoft Yahei';
+}
+/*第四屏结束*/
+
+/*轮播点*/
+.nav-right{
+    width:28px;
+    height:87px;
+    position:fixed;
+    top:50%;right:17px;
+    color: rgb(0, 0, 0);
+    margin-top: -43.5px;
+    z-index:20;
+    /*background:red;*/
+}
+.nav-right ul li{
+    display: block;
+    width: 8px;
+    height: 8px;
+    border:1px solid#000;
+    border-radius:50%;
+    margin: 7px;
+    position: relative;
+    cursor:pointer;
+}
+.nav-right .active{
+    background:#1E4D79;
+}
+.lis{
+    position: absolute;
+    top: -2px;right:20px;
+    color: #fff;
+    font-size: 14px;
+    font-family: arial,helvetica,sans-serif;
+    white-space: nowrap;
+    max-width: 220px;
+    overflow: hidden;
+    display: block;
+    opacity: 0;
+    width: 0;
+}
+
+
+
+
+
+
+
+
+
